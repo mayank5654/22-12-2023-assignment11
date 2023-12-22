@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="assignment11.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <link href="OurStyle.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 221%;
+            height: 192px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel"><h1>Articles Website</h1></div>
+        <div class="leftPanel">
+            <h2>Articles</h2>
+            <div class="image-container">
+                <asp:Image ID="Image1" runat="server" Width="127px" Height="125px" ImageUrl="~/images/1.jpg" />
+                <asp:Image ID="Image2" runat="server" Width="153px" Height="134px" ImageUrl="~/images/dell laptop.jpg" />
+                <asp:Image ID="Image3" runat="server" Width="201px" ImageUrl="~/images/article 3.jpg" />
+                <asp:Image ID="Image4" runat="server" Width="149px" ImageUrl="~/images/1.jpg" />
+            </div>
+        </div>
+        <div class="centerPanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <h1>
+                   Welcome To Our Website </h1>
+            </asp:ContentPlaceHolder>
+        </div>
+         <div class="rightPanel"><h2>Menu</h2>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Articles.aspx">Articles</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+            </div> 
+        <div class="footer">
+        <!-- Footer content here -->
+        <p>&copy; 2023 My Dynamic Website</p>
+    </div>
+    </form>
+</body>
+</html>
